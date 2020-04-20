@@ -130,7 +130,7 @@ impl Sender {
                 warn!("Error occurred while setting TTL - signalling shut down");
 
                 signal.store(true, Ordering::SeqCst);
-                reutrn Err(e);
+                return Err(Box::new(e));
             }
             }
         }

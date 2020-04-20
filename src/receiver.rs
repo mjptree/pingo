@@ -2,7 +2,6 @@ use crossbeam::queue::SegQueue;
 use pnet::packet::{icmp::IcmpType, icmpv6::Icmpv6Type};
 use pnet::transport::TransportReceiver;
 use std::collections::HashMap;
-use std::error::Error;
 use std::net::IpAddr;
 use std::sync::{atomic::Ordering, Arc, Mutex};
 use std::thread::{self, JoinHandle};
